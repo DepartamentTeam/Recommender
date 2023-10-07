@@ -3,11 +3,13 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 import yaml
 import torch
-import glob
+import os
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-with open("config.yaml") as f:
+config_path = "config.yaml" if "config.yaml" in os.listdir() else "Recommender/config.yaml"
+
+with open(config_path) as f:
     cfg = yaml.load(f, Loader=yaml.FullLoader)
 
 model = SentenceTransformer(cfg['model']['backbone']['base'], device=device)
