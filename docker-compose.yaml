@@ -1,0 +1,18 @@
+version: '3'
+services:
+      model_api:
+        build:
+          context: ./model_api/
+          dockerfile: ./Dockerfile
+        restart: always
+        ports:
+          - 8000:8000
+      web_app:
+        build:
+          context: ./web_dash/
+          dockerfile: ./Dockerfile
+        restart: always
+        links:
+          - model_api
+        ports:
+          - 8050:8050

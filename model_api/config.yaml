@@ -1,0 +1,7 @@
+model:
+ backbone:
+  base: sentence-transformers/all-MiniLM-L6-v2
+  distilRoberta: sentence-transformers/all-distilroberta-v1"
+  mpnet: sentence-transformers/all-mpnet-base-v2
+ max_sentence_len: 512
+ batch_size: 16

@@ -1,0 +1,44 @@
+.header {
+  background-color: #15377a;
+  margin: 0px;
+  height: 52px;
+  vertical-align: middle;
+  display: flex;
+  overflow: clip;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+body {
+  background-color: #d0eef2;
+  margin: 0;
+  padding: 0;
+}
+
+.row{ margin-left: 0; margin-right: 0;}
+
+.logo {
+  alt: "sedmax";
+  max-width: 100px;
+  max-height: 48px;
+  vertical-align: middle;
+  margin-left: 20px;
+  op
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.main-svg {
+border-radius: 15px;
+box-shadow: 0 0 7px rgba(0,0,0,0.2);
+}
+
+.bg-custom {
+  --bs-bg-opacity: 1;
+  background-color: #47a8ed !important;
+}
+
+--bs-primary: #ed7947
